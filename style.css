@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: inline-flex; 
+    background-color: white;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    box-shadow: 2px 10px 10px 2px gainsboro;
+}
+
+header .logo ,header .logo-1{
+    margin: 1%;
+    color: rgb(74, 184, 143);
+    font-size: 25px;
+    display: inline-flex;
+}
+header .logo-1{
+    display: none;
+}
+header ul{
+    display: inline-flex; 
+    margin: 1%;
+    margin-left:900px;
+}
+ul li{
+    
+    list-style: none;
+}
+ul li a{
+    
+    color: black;
+    font-size:18px;
+    margin-left:50px;
+    text-decoration: none;
+}
+li a:hover{
+    color: rgb(74, 184, 143);
+    text-decoration: underline;
+}
+#check{
+    display: none;
+}
+.menu{
+    display: none;
+}
+#home{
+    background-color: rgba(255, 255, 255, 0.962);
+    text-align: center;
+    height: 80vh;
+}
+#home h1{
+    margin-top:40px;
+    font-size:80px;
+}
+#about img{
+    margin-left:10%;
+}
+#about{ z-index: -1;
+    margin: 2%;position: relative;
+}
+#about .col-content{
+    position: absolute;
+    left:40%; top: 1%;
+}
+#about button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+}
+.box{
+    background-color: rgb(6, 159, 124);
+    padding: 10px;
+}
+.box p{
+    color: white;
+    text-align: center;
+}
+.box p span {
+    padding:60px;
+}
+
+#service h1{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    font-size:60px;
+}
+#service .d-flex  {
+    display: inline-flex;
+}
+#service .d-flex p {
+    font-size: 25px;
+    padding: 20px 80px;
+}
+#works{
+    align-items: center;
+    margin-top: 10%;
+}
+#works h1{
+    font-size: 60px;
+    text-align: center;
+}
+#works .row-1{
+    margin: 4%;
+    display: inline-flex;
+    font-size: 20px;
+}
+#works .col-1{
+    margin-left:15%;
+}
+#works .col-2{
+    margin-left:30%;
+}
+#idea{
+    background-color: rgb(38, 206, 206);
+    width: 100%;
+    height: 55vh;
+    text-align: center; 
+    margin-top: 14%; 
+}
+.bg {
+    color: white;
+    margin-top: 10%;
+    font-size: 32px;
+}
+footer{
+    background-color: rgb(31, 30, 30);
+    position: relative;
+    height: 36vh;
+}
+footer .logo{
+    color: rgb(74, 184, 143);
+    font-size: 25px;
+}
+.col3 i{
+    color: rgb(74, 184, 143);
+    
+}
+.col1{
+    margin-left: 10%;
+    line-height:30px;
+    color: white;
+}
+.col2{
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    line-height: 30px;
+    color: white;
+}
+.col3{
+    position: absolute;
+    left: 70%;
+    top: 5%;
+    line-height: 30px;
+    color: white;
+}
+footer .foot{
+    margin-top:7%;
+}
+@media (max-width:1200px){
+    header{
+        display: inline-flex; 
+    }
+    header .logo{
+        display:none;
+    }
+    .menu{
+        display: block;
+        position:relative;
+        margin:3%;
+        font-size: 30px;
+    }
+      nav ul{
+            display: block;
+            width: 100%; text-align: center;
+            margin-left: -100%;
+            position: absolute;
+        }
+        nav ul li{
+           width: 150%;
+            margin-left: 1%;
+            padding-top: 18px;
+            padding-bottom: 10px;
+        }
+        #check:checked ~ ul{
+           margin-left:0%;
+           position: relative;
+        } 
+
+        header .logo-1{
+            position: fixed;top: 0;
+            display: block;
+            margin-left:70%;
+        }
+#home{
+    height: 40vh;
+}
+#home h1{
+    margin-top:20px;
+    font-size:30px;
+}
+.box{
+    font-size: 10px;
+}
+#about img{
+    margin-left:13%;
+    width: 60%;
+}
+#about{
+    z-index: -1;
+    margin: 2%;position: relative;
+    height: 78vh;
+}
+#about .con-1{
+    display: none;
+}
+#about .col-content{
+    position: absolute;
+    left:0%; top:58%;
+    font-size: 12px;
+}
+#about button{
+    padding:5px 5px;
+}.box p span{
+    padding:10px;
+}
+#service h1 , #works h1{
+    font-size: 20px;
+}
+#service .d-flex  {
+    display:inline-table;
+}
+#service .d-flex p {
+    font-size:15px;
+    padding: 20px 30px;
+}
+#works .row-1{
+    margin: 2%;
+    display: inline-table;
+}
+#works .col-1 img,#works .col-2 img{
+    width: 80%;
+}
+#works .col-1{
+    margin-top:5%;
+    margin-left:13%;
+}
+#works .col-2{
+    margin-top:5%;
+    margin-left:13%;
+}
+
+.bg{
+    margin-top: 20%;
+    font-size: 22px;
+}
+footer{
+    position: relative;
+    height: 80vh;
+}
+.col1{
+    margin-left: 2%;
+}
+.col2{
+    position: absolute;
+    left: 2%;
+    top: 28%;
+    line-height: 30px;
+    color: white;
+}
+.col3{
+    position: absolute;
+    left:2%;
+    top: 56%;
+    line-height: 30px;
+    color: white;
+}
+footer .foot p {
+    margin-top: 80%;
+}
+
+}
+
+
+
+
+
+
+
+
